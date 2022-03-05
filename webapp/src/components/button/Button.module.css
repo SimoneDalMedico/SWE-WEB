@@ -1,0 +1,109 @@
+.button{
+   border: 1px solid grey;
+   
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   background-color: white;
+   position:relative;
+   transition: .4s ease-in;
+   -webkit-transition: .4s ease-in;
+   -moz-transition: .4s ease-in;
+   -ms-transition: .4s ease-in;
+   -o-transition: .4s ease-in;
+   z-index: 1;
+   width: 15em;
+   /* background-color: #f8edeb; */
+   /* color:white; */
+   letter-spacing: 0.2em;
+   display: flex;
+   justify-content: space-around;
+}
+.button img{
+   width: 6em;
+}
+.button::after{
+   position: absolute;
+   content: "";
+   z-index: -1;
+}
+/* 1° stile */
+/* .button:hover{
+   box-shadow: inset -10.5em 0 0 0 #fecdd3, inset 10.05em 0 0 0 #fecdd3;
+   width: 16em;
+} */
+/* 2°stile  NON FUNZIONA*/
+/* .button::after{
+   height: 100%;
+   left: -35%;
+   top: 0;
+   transform: skew(50deg);
+   -webkit-transform: skew(50deg);
+   -moz-transform: skew(50deg);
+   -ms-transform: skew(50deg);
+   -o-transform: skew(50deg);
+   transition-duration: 0.6s;
+   transform-origin: top left;
+   width: 0;
+}
+.button:hover::after{
+   height: 100%;
+   width: 135%;
+} */
+
+/* 3°stile se si fa tema dark*/
+.button:hover{
+   border: 2.5px solid #fdc500;
+   color: white;
+   background: #0e6ba8 !important;
+   overflow: hidden;
+}
+/* colori
+1565c0
+1976d2
+4361ee
+0e6ba8 !
+0a2472
+102e4a
+ */
+.button:hover img{
+   /*position: relative;
+   */transform:translateX(4em);
+   -webkit-transform:translateX();
+   -moz-transform:translateX();
+   -ms-transform:translateX();
+   -o-transform:translateX();
+   transition-duration: .20s;
+   -webkit-transform: translateX(60);
+}
+.button:hover span{
+   /*display: none !important;
+   */transition-duration: .3s;
+   transform: translateX(150%);
+   -webkit-transform: translateX(150%);
+   -moz-transform: translateX(150%);
+   -ms-transform: translateX(150%);
+   -o-transform: translateX(150%);
+} 
+
+/* .button:hover{
+   background-color: #ff9782;
+}
+.button:hover span{
+   color: white;
+   font-weight: normal;
+}
+.button img{
+   width: 25%;
+   padding: 0.5em 0;
+}
+*/
+.button span{
+   display: block;
+   font-size: 1.8em;
+   padding: 0 1em 0 0 ;
+   font-weight: lighter;
+   
+} 

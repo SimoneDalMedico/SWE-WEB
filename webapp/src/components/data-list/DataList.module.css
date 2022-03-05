@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+li{
+    background-color: rgba(250, 250, 250, 0.9);
+}
+
+li:nth-child(odd){
+    background-color: rgba(240, 240, 240, 0.9);
+}

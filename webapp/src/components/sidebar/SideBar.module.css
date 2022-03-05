@@ -1,0 +1,35 @@
+.sidebar {
+    border-right: 1px solid black;
+    min-height: 45em;
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    margin: 3em 0 0 0;
+    padding: 0.2em;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px 1px;
+    font-size: 1.2em;
+    width: 90%;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 40vh;
+}
+.logout{
+    display: block;
+    position: absolute;
+    bottom: 3em;
+}
+.termina{
+    display: block;
+    position: absolute;
+    bottom: 9em;
+}
